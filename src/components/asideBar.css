@@ -2,5 +2,5 @@ aside{
   grid-row-start: 1;
   grid-row-end: 3;
   background-color: antiquewhite;
-  grid-area: 1fr;
+  border-radius: 12px;
 }
