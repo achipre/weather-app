@@ -14,11 +14,12 @@ aside{
   padding-bottom: 2rem;
 }
 aside svg{
-  width: 2.5rem;
-  height: 2.5rem;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 aside svg:first-child{
-  height: 2.5rem;
+  height: 3.5rem;
 }
 .logoAside p{
   font-family: 'Rubik', sans-serif;
@@ -36,15 +37,23 @@ aside .asideTopSection .menuAside,
 aside .asideProfile{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 aside .asideTopSection .logoAside{
   padding-bottom: 1.5rem;
 }
+aside .asideTopSection .menuAside{
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
+}
+
 hr{
   border-color: #ffffff65;
   border-bottom: 0;
   width: 100%;
+  margin: 0;
 
 }
