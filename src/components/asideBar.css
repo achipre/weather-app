@@ -1,6 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
 aside{
   grid-row-start: 1;
   grid-row-end: 3;
-  background-color: antiquewhite;
+  background-image: linear-gradient(#1D1E20, #233239, #1D1E20);
+  backdrop-filter: blur(40px);
   border-radius: 12px;
+  border: 1px solid #ffffff65;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+aside svg{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+aside svg:first-child{
+  height: 2.5rem;
+}
+.logoAside p{
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  font-weight: 900;
+  text-align: center;
+  font-size: .8rem;
+  transform: translateY(-.5rem);
+}
+aside .asideTopSection{
+  width: 100%;
+}
+aside .asideTopSection .logoAside,
+aside .asideTopSection .menuAside,
+aside .asideProfile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+aside .asideTopSection .logoAside{
+  padding-bottom: 1.5rem;
+}
+hr{
+  border-color: #ffffff65;
+  border-bottom: 0;
+  width: 100%;
+
 }

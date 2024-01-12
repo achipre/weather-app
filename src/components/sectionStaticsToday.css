@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+
 article{
-  background-color: cadetblue;
+  background-image: linear-gradient(#1D1E20, #233239);
+  border: 1px solid #ffffff65;
   height: calc(50vh - 2.25rem);
   width: 100%;
   border-radius: 1rem;
+  font-family: 'Rubik', sans-serif;
+
 }
