@@ -2,10 +2,10 @@
 aside{
   grid-row-start: 1;
   grid-row-end: 3;
-  background-color: #1F1F1F;
+  background-image:linear-gradient(#1D1E20, #233239, #1D1E20);
   backdrop-filter: blur(40px);
   border-radius: 12px;
-  border: 1px solid #ffffff65;
+  border: 1px solid #ffffff1e;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,12 +41,17 @@ aside .asideProfile{
   align-items: center;
 }
 aside .asideTopSection .logoAside{
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 aside .asideTopSection .menuAside{
   padding: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  gap: 1rem;
+}
+aside .asideProfile{
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
