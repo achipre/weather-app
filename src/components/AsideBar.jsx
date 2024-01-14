@@ -1,21 +1,13 @@
 import { useState } from 'react'
 import { IconsLogo, Home, IconsMap, IconsPinMap, IconsWorld, IconsCalendar, IconsBells, IconsProfile, IconsSetting } from './Icons'
 import './asideBar.css'
-import {
-  Outlet,
-  RouterProvider,
-  Link,
-  Router,
-  Route,
-  RootRoute
-} from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/router-devtools'
+import { RootRoute } from '@tanstack/react-router'
 
-const rootRoute = RootRoute({
+export const Route = new RootRoute({
   component: AsideBar
 })
 
-export default function AsideBar () {
+function AsideBar () {
   const [isBell, setIsBell] = useState(false)
   const handleBell = () => {
     setIsBell(!isBell)
@@ -40,9 +32,7 @@ export default function AsideBar () {
       </div>
       <div className="asideProfile">
         <IconsBells isBell={isBell} handleBell={handleBell}/>
-        <Link to='/profile'>
           <IconsProfile />
-        </Link>
       </div>
     </aside>
   )
