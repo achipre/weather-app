@@ -1,9 +1,8 @@
 import './sectionStaticsToday.css'
-
-export default function SectionStatictsToday () {
+export default function SectionStatictsToday ({ isSection }) {
   return (
-    <article>
-      <h2>Today&apos;s HightLight</h2>
+    <article className={isSection === 'PinMap' ? 'articleFull' : 'weatherTwo'}>
+      <h2>2Today&apos;s HightLight</h2>
     </article>
   )
 }

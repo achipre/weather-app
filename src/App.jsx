@@ -11,13 +11,20 @@ function App () {
   const handleSection = (info) => {
     setIsSection(info)
   }
+  console.log(isSection)
   return (
-    <main>
+    <main className={isSection !== 'Home' && 'mainflex'}>
       <AsideBar isSection={isSection} handleSection={handleSection}/>
-      <SectionWeatherToday />
-      <SectionStatictsToday />
-      <SectionWeatherWeek />
-      <SectionWeatherMap />
+      {isSection === 'Home' && <>
+        <SectionWeatherToday />
+        <SectionStatictsToday />
+        <SectionWeatherWeek />
+        <SectionWeatherMap />
+      </>}
+      {isSection === 'Map' && <SectionWeatherToday isSection={isSection}/>}
+      {isSection === 'PinMap' && <SectionStatictsToday isSection={isSection} />}
+      {isSection === 'World' && <SectionWeatherWeek isSection={isSection} />}
+      {isSection === 'Calendar' && <SectionWeatherMap isSection={isSection} />}
     </main>
   )
 }

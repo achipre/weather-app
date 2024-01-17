@@ -1,8 +1,8 @@
 import './sectionWeatherMap.css'
-export default function SectionWeatherMap () {
+export default function SectionWeatherMap ({ isSection }) {
   return (
-    <article className='weatherMap'>
-      <h2>Weather&apos;s in the Map</h2>
+    <article className={isSection === 'Calendar' ? 'articleFull' : 'weatherFour'}>
+      <h2>4Weather&apos;s in the Map</h2>
     </article>
   )
 }

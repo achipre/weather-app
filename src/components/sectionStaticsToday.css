@@ -1,0 +1,4 @@
+.articleFull{
+  height: calc(100dvh - 3rem);
+  background-image:linear-gradient(#1D1E20, #233239, #1D1E20);
+}

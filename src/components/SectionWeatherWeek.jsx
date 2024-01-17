@@ -1,8 +1,8 @@
 import './sectionWeatherWeek.css'
-export default function SectionWeatherWeek () {
+export default function SectionWeatherWeek ({ isSection }) {
   return (
-    <article className='weatherWeek'>
-      <h2>7 days Forecast</h2>
+    <article className={isSection === 'World' ? 'articleFull' : 'weatherThree'}>
+      <h2>37 days Forecast</h2>
     </article>
   )
 }

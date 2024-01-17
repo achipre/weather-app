@@ -4,3 +4,7 @@ main{
   gap: 1.5rem;
   grid-template-columns: 1fr 5fr 10fr;
 }
+.mainflex{
+  display: flex;
+  height: calc(100dvh - 3rem);
+}
