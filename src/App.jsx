@@ -11,7 +11,6 @@ function App () {
   const handleSection = (info) => {
     setIsSection(info)
   }
-  console.log(isSection)
   return (
     <main className={isSection !== 'Home' && 'mainflex'}>
       <AsideBar isSection={isSection} handleSection={handleSection}/>

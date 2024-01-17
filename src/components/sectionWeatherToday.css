@@ -15,3 +15,7 @@ article{
     margin: 0;
   }
 }
+.articleFull{
+  height: calc(100dvh - 3rem);
+  background-image:radial-gradient( #233239, #1D1E20);
+}
