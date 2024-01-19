@@ -38,3 +38,18 @@
   transform: translateY(-50%);
   right: 16px;
 }
+.weatherIcon{
+  align-self: center;
+  width: 50%;
+  height: 50%;
+}
+.dashboard{
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+
+}

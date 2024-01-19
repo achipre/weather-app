@@ -12,7 +12,7 @@ function App () {
     setIsSection(info)
   }
   return (
-    <main className={isSection !== 'Home' && 'mainflex'}>
+    <main className={isSection !== 'Home' ? 'mainflex' : ''}>
       <AsideBar isSection={isSection} handleSection={handleSection}/>
       {isSection === 'Home' && <>
         <SectionWeatherToday />

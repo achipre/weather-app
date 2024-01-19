@@ -25,6 +25,7 @@
 @keyframes inputFull{
   0%{width: 0}
   1%{
+    width: 100%; 
     padding: 1rem;
     padding-left: 1.8rem;
     padding-right: 3rem;}
