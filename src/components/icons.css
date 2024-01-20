@@ -78,3 +78,7 @@
   50%{right: 80%;}
   100%{right: -10%;}
 }
+.iconTermometer, .iconVisibility{
+  width: 18px;
+  height: 26px;
+}
