@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { IconsClose, IconsCloud, IconsPinMap, IconsSearch } from './Icons'
+import { IconsBackOne, IconsBackTwo, IconsClose, IconsCloud, IconsPinMap, IconsSearch } from './Icons'
 import './sectionWeatherToday.css'
 
 export default function SectionWeatherToday ({ isSection }) {
@@ -18,6 +18,8 @@ export default function SectionWeatherToday ({ isSection }) {
 
   return (
     <article className={isSection === 'Map' ? 'articleFull' : 'weatherOne'}>
+      <IconsBackOne />
+      <IconsBackTwo />
       <div className="weather">
         <h2>TODAY</h2>
         <IconsCloud />

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
 
 article{
+  overflow: hidden;
   display: flex;
   background-image: linear-gradient(#1D1E20, #233239);
   border: 1px solid #ffffff1e;
@@ -36,7 +37,6 @@ article{
       margin: 0;
       font-size: 5rem;
     }
-
   }
   & .weather{
     width: 100%;
