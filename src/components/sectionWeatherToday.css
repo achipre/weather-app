@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
 
 article{
+  display: flex;
   background-image: linear-gradient(#1D1E20, #233239);
   border: 1px solid #ffffff1e;
   height: calc(50vh - 2.25rem);
@@ -26,7 +27,7 @@ article{
     border-radius: .2rem;
   }
   & p{
-    font-size: 8rem;
+    font-size: min(12rem, 5vw);
     font-family: "Outfit", sans-serif;
     line-height: 1;
     margin: 0;
