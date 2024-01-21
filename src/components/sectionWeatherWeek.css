@@ -1,3 +1,28 @@
 .weatherThree{
   background-image: linear-gradient( #233239, #1D1E20);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  & .card__day{
+    height: 30px;
+    border-radius: 8px;
+    background-image: radial-gradient( #233239, #1D1E20);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .card__day-temp{
+      width: 50%;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      & p{
+        font-size: 2rem;
+      }
+    }
+    & p{
+      font-size: 1rem;
+    }
+
+  }
 }

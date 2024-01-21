@@ -78,7 +78,12 @@
   50%{right: 80%;}
   100%{right: -10%;}
 }
-.iconTermometer, .iconVisibility{
+.iconWind,
+.iconUVIndex,
+.iconPressure,
+.iconHumanity,
+.iconVisibility,
+.iconTermometer{
   width: 18px;
-  height: 26px;
+  height: 18px;
 }

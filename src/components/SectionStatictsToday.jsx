@@ -1,4 +1,4 @@
-import { IconsTermometer, IconsVisibility } from './Icons'
+import { IconsHumanity, IconsPressure, IconsTermometer, IconsUVIndex, IconsVisibility, IconsWinds } from './Icons'
 import './sectionStaticsToday.css'
 export default function SectionStatictsToday ({ isSection }) {
   return (
@@ -6,37 +6,71 @@ export default function SectionStatictsToday ({ isSection }) {
       <h2>TODAY&apos;S HIGHLIGHT</h2>
       <div className="weatherTodayHighlight">
         <article className='cardToday cardWind'>
-          <p>Wind Status</p>
-          <p>7.5</p><span>km/h</span>
+          <div className="titleCard">
+            <IconsWinds />
+            <p>Wind Status</p>
+          </div>
+          <div className="statics">
+            <div className="wind">
+              <p>7.5<span>km/h</span></p>
+            </div>
+          </div>
         </article>
         <article className='cardToday cardUV'>
-          <p>UV Index</p>
-          <p>5.50</p><span>uv</span>
+          <div className="titleCard">
+            <IconsUVIndex />
+            <p>UV Index</p>
+          </div>
+          <div className="statics">
+            <div className="uvIndex">
+              <p>5.50<span>uv</span></p>
+            </div>
+          </div>
         </article>
         <article className='cardToday cardPressure'>
-          <p>Pressure</p>
-          <p>1020</p><span>hPa</span>
+          <div className="titleCard">
+            <IconsPressure />
+            <p>Pressure</p>
+          </div>
+          <div className="statics">
+            <div className="uvIndex">
+              <p>1020<span>hPa</span></p>
+            </div>
+          </div>
         </article>
         <article className='cardToday cardHumanity'>
-          <p>Humidity</p>
-          <p>80</p><span>%</span>
+          <div className="titleCard">
+            <IconsHumanity />
+            <p>Humidity</p>
+          </div>
+          <div className="statics">
+            <div className="humidity">
+              <p>80<span>%</span></p>
+            </div>
+            <p className='descriptions'>
+              Visibility in meter</p>
+          </div>
         </article>
-        <article className='cardToday cardVisivility'>
-          <p>Visibility</p>
+        <article className='cardToday cardVisibility'>
+          <div className="titleCard">
+            <IconsVisibility />
+            <p>Visibility</p>
+          </div>
           <div className="statics">
             <div className="visibility">
               <p>1000<span>m</span></p>
             </div>
             <p className='descriptions'>
-              <IconsVisibility />
               Visibility in meter</p>
           </div>
         </article>
         <article className='cardToday cardFeelsLike'>
-          <p>Feels Like</p>
+        <div className="titleCard">
+            <IconsTermometer />
+            <p>Feels Like</p>
+          </div>
           <div className="statics">
             <div className="temp">
-              <IconsTermometer />
               <p>10<sup>o</sup></p>
             </div>
             <p className='descriptions'>Temperature human perception</p>

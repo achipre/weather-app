@@ -50,7 +50,7 @@
 }
 .cardTodayHighlight{
   display: flex;
-  gap: .5rem;
+  gap: 1rem;
   flex-direction: column;
 }
 .weatherTodayHighlight{
@@ -65,7 +65,7 @@
   padding: 1.5rem;
   padding-top: 1.2rem;
   padding-bottom: 1rem;
-  background-image: radial-gradient( #233239, #23262b);
+  background-image: radial-gradient( #23262b,  #202a2f);
   border: none;
   height: auto;
   min-width: 160px;
@@ -82,19 +82,99 @@
 .cardWind{
   grid-column: 1/2;
   grid-row: 1/3;
-  
+  & .titleCard{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  & .statics{
+    margin-top: auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    & .wind{
+      & p{
+        text-align: justify;
+        line-height: 1;
+        font-size: 2rem;
+        display: flex;
+        gap: .2rem;
+        align-items: baseline;
+        & span{
+          font-size: .8rem;
+        }
+      }
+    }
+  }
 }
+
 .cardUV{
   grid-column: 2/3;
   grid-row: 1/3;
+  & .titleCard{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  & .statics{
+    margin-top: auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    & .uvIndex{
+      & p{
+        text-align: justify;
+        line-height: 1;
+        font-size: 2rem;
+        display: flex;
+        gap: .2rem;
+        align-items: baseline;
+        & span{
+          font-size: .8rem;
+        }
+      }
+    }
+  }
 }
 
 .cardPressure{
   grid-column: 3/4;
   grid-row: 1/3;
+  & .titleCard{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  & .statics{
+    margin-top: auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    & .uvIndex{
+      & p{
+        text-align: justify;
+        line-height: 1;
+        font-size: 2rem;
+        display: flex;
+        gap: .2rem;
+        align-items: baseline;
+        & span{
+          font-size: .8rem;
+        }
+      }
+    }
+  }
 }
-.cardFeelsLike{
-  & .temp{
+.cardHumanity{
+  & .titleCard{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  & .humidity{
     width: 100%;
     display: flex;
     align-items: center;
@@ -114,9 +194,49 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: space-between;
+    & .descriptions{
+      width: 50%;
+    }
   }
 }
-.cardVisivility{
+.cardFeelsLike{
+  & .titleCard{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  & .temp{
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    & p{
+      text-align: justify;
+      line-height: 1;
+      font-size: 2rem;
+      & sup{
+        line-height: .2;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  & .statics{
+    margin-top: auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    & .descriptions{
+      width: 50%;
+    }
+  }
+}
+.cardVisibility{
+  & .titleCard{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
   & .visibility{
     width: 100%;
     display: flex;
@@ -137,5 +257,9 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: space-between;
+    & .descriptions{
+      width: 50%;
+    }
   }
 }
