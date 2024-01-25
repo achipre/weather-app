@@ -95,15 +95,28 @@
     justify-content: center;
     & .wind{
       & p{
+        margin-top: 1rem;
         text-align: justify;
         line-height: 1;
         font-size: 2rem;
         display: flex;
+        justify-content: center;
         gap: .2rem;
         align-items: baseline;
         & span{
           font-size: .8rem;
         }
+      }
+      & .windAnimation{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        & .windLine{
+          width: 2px;
+          height: 10px;
+          background-color: aliceblue;
+        }
+
       }
     }
   }
