@@ -14,15 +14,17 @@ export default function SectionStatictsToday ({ isSection }) {
             <div className="wind">
               <div className="windAnimation">
                 <div className="windLine"></div>
+                <div className="windLine2"></div>
                 <div className="windLine"></div>
+                <div className="windLine2"></div>
                 <div className="windLine"></div>
+                <div className="windLine2"></div>
                 <div className="windLine"></div>
+                <div className="windLine2"></div>
                 <div className="windLine"></div>
+                <div className="windLine2"></div>
                 <div className="windLine"></div>
-                <div className="windLine"></div>
-                <div className="windLine"></div>
-                <div className="windLine"></div>
-                <div className="windLine"></div>
+                <div className="windLine2"></div>
                 <div className="windLine"></div>
               </div>
               <p>7.5<span>km/h</span></p>
