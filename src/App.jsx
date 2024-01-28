@@ -5,9 +5,15 @@ import SectionStatictsToday from './components/SectionStatictsToday'
 import SectionWeatherMap from './components/SectionWeatherMap'
 import SectionWeatherToday from './components/SectionWeatherToday'
 import SectionWeatherWeek from './components/SectionWeatherWeek'
+// import { createClient } from '@supabase/supabase-js'
+
+// const supabase = createClient('https://urjajmkokoivpydzwxiv.supabase.co', process.env.VITE_SUPABASE_KEY)
 
 function App () {
   const [isSection, setIsSection] = useState('Home')
+  // Estado de Sesion
+  // const [session, setSession] = useState(null)
+
   const handleSection = (info) => {
     setIsSection(info)
   }

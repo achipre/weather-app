@@ -8,7 +8,12 @@ export function AsideBar ({ handleSection, isSection }) {
   const handleBell = () => {
     setIsBell(!isBell)
   }
-  // const [isDashboard] = useState(false)
+
+  // Open Modal Sign In
+  const [modalProfile, setModalProfile] = useState(false)
+  const handleModalProfile = () => {
+    setModalProfile(true)
+  }
 
   return (
     <aside>
@@ -31,7 +36,7 @@ export function AsideBar ({ handleSection, isSection }) {
       </div>
       <div className="asideProfile">
         <IconsBells isBell={isBell} handleBell={handleBell}/>
-          <IconsProfile />
+        <IconsProfile handleModalProfile={handleModalProfile} modalProfile={modalProfile} setModalProfile={setModalProfile}/>
       </div>
     </aside>
   )
